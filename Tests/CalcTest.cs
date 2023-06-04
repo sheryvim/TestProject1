@@ -11,8 +11,6 @@ namespace TestProject1.Tests
     [TestFixture("-2", "*", "5", "-10")]
     public class CalcTest : BaseTest
     {
-
-
         string firstNum;
         string operand;
         string secondNum;
