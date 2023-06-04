@@ -5,12 +5,12 @@ using TestProject1.Manager;
 
 namespace TestProject1.Tests
 {
-    /*[TestFixture("2", "+", "2", "5")]
+    [TestFixture("2", "+", "2", "5")]
     [TestFixture("2", "+", "2", "4")]
     [TestFixture("2", "+", "2,1", "4,1")]
     [TestFixture("-2", "*", "5", "-10")]
-    [TestFixture("0", "/", "0", "1")]*/
-    [TestFixture("a", "*", "!", "_")]
+    [TestFixture("10", "/", "5", "2")]
+   
     public class CalcTest : BaseTest
     {
         string firstNum;
