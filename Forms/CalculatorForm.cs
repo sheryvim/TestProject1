@@ -11,25 +11,25 @@ namespace TestProject1.Forms
 {
     class CalculatorForm : BaseForm
     {
-        Button button0;
-        Button button1;
-        Button button2;
-        Button button3;
-        Button button4;  
-        Button button5;
-        Button button6;
-        Button button7;
-        Button button8;
-        Button button9;
+        private Button button0;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;  
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button9;
         
-        Button buttonPlus;
-        Button buttonMinus;
-        Button buttonMultiply;
-        Button buttonDivide;
-        Button buttonEqual;
+        private Button buttonPlus;
+        private Button buttonMinus;
+        private Button buttonMultiply;
+        private Button buttonDivide;
+        private Button buttonEqual;
 
-        Button buttonComma;
-        Button buttonNegate;
+        private Button buttonComma;
+        private Button buttonNegate;
 
         private TextField ResutlField;
 
@@ -66,8 +66,8 @@ namespace TestProject1.Forms
         /// <summary>
         /// Вызов клика нужного числового значения
         /// </summary>
-        /// <param name="buttonText">Хранение нужного значения</param>
-        /// <returns>Запись в нужное поле</returns>
+        /// <param name="buttonText">текст для значения</param>
+        /// <returns>Запись в поле</returns>
         public CalculatorForm ClickNumButtom(string buttonText)
         {
             char[] chars = buttonText.ToCharArray();
@@ -119,8 +119,8 @@ namespace TestProject1.Forms
         /// <summary>
         /// вызов нужного клика на арифметические знаки
         /// </summary>
-        /// <param name="operandText">Хранение нужного знака</param>
-        /// <returns></returns>
+        /// <param name="operandText">Текст для арифметического знака</param>
+        /// <returns>возвращение нужного знака</returns>
         public CalculatorForm ClickOperandButton(string operandText)
         {
             switch (operandText)

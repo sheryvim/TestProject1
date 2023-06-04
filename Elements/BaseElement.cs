@@ -18,7 +18,7 @@ namespace TestProject1.Elements
         }
 
         /// <summary>
-        /// срабатывание нажатия кнопки мыши
+        /// Срабатывание нажатия кнопки мыши
         /// </summary>
         public void Click()
         {
@@ -26,23 +26,12 @@ namespace TestProject1.Elements
         }
 
         /// <summary>
-        /// получение текста
+        /// Получение текста
         /// </summary>
-        /// <returns>присвоение текста</returns>
+        /// <returns>Текст из элемента</returns>
         public string GetText()
         {
             return element.Text;
         }
-
-        /// <summary>
-        /// Проверка на видимость
-        /// </summary>
-        /// <returns></returns>
-        public bool IsVisible()
-        {
-            return element.Displayed;
-        }
-
-
     }
 }

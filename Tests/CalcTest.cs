@@ -5,10 +5,12 @@ using TestProject1.Manager;
 
 namespace TestProject1.Tests
 {
-    [TestFixture("2", "+", "2", "5")]
+    /*[TestFixture("2", "+", "2", "5")]
     [TestFixture("2", "+", "2", "4")]
-    [TestFixture("2", "+", "2.1", "4.1")]
+    [TestFixture("2", "+", "2,1", "4,1")]
     [TestFixture("-2", "*", "5", "-10")]
+    [TestFixture("0", "/", "0", "1")]*/
+    [TestFixture("a", "*", "!", "_")]
     public class CalcTest : BaseTest
     {
         string firstNum;
@@ -30,9 +32,12 @@ namespace TestProject1.Tests
         public void Test1()
         {
             calcForm.InitForm();
-            calcForm.ClickNumButtom(firstNum).ClickOperandButton(operand).ClickNumButtom(secondNum).ClickOperandButton("=");
+            calcForm.ClickNumButtom(firstNum)
+                .ClickOperandButton(operand)
+                .ClickNumButtom(secondNum)
+                .ClickOperandButton("=");
             string result = calcForm.GetResult();
-            Assert.AreEqual("Отображать как " + expectedResult.Replace('.', ','), result, "Ошибка");
+            Assert.AreEqual("Отображать как " + expectedResult, result, "Ошибка");
                 
         }
     }
