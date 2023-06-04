@@ -16,7 +16,7 @@ namespace TestProject1.Tests
             const string CalculatorAppId = "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App";
             AppiumOptions appCapabilities = new AppiumOptions();
             appCapabilities.AddAdditionalCapability("app", CalculatorAppId);
-            appCapabilities.AddAdditionalCapability("deviceName", "WindowsPC"); // 19-21 - заполнение конфига для запуска дривера 
+            appCapabilities.AddAdditionalCapability("deviceName", "WindowsPC"); // 19-21 - заполнение конфига для запуска драйвера 
 
             DriverManager.StartDriver(appCapabilities);
         }

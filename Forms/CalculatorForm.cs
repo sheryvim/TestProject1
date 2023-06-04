@@ -33,6 +33,10 @@ namespace TestProject1.Forms
 
         private TextField ResutlField;
 
+       /// <summary>
+       /// Получение элемента из экземпляра драйвера для поиска нужной кнопки
+       /// </summary>
+       /// <returns>запись значения</returns>
         public CalculatorForm InitForm()
         {
             button0 = new Button(DriverManager.GetDriver().FindElementByName("Нуль"));
@@ -59,6 +63,11 @@ namespace TestProject1.Forms
             return this;
         }
 
+        /// <summary>
+        /// Вызов клика нужного числового значения
+        /// </summary>
+        /// <param name="buttonText">Хранение нужного значения</param>
+        /// <returns>Запись в нужное поле</returns>
         public CalculatorForm ClickNumButtom(string buttonText)
         {
             char[] chars = buttonText.ToCharArray();
@@ -107,6 +116,11 @@ namespace TestProject1.Forms
             return this;
         }
 
+        /// <summary>
+        /// вызов нужного клика на арифметические знаки
+        /// </summary>
+        /// <param name="operandText">Хранение нужного знака</param>
+        /// <returns></returns>
         public CalculatorForm ClickOperandButton(string operandText)
         {
             switch (operandText)
@@ -130,6 +144,10 @@ namespace TestProject1.Forms
             return this;
         }
 
+        /// <summary>
+        /// Получение текста из окна результата
+        /// </summary>
+        /// <returns>Присвоение значения</returns>
         public string GetResult()
         {
             return ResutlField.GetText();

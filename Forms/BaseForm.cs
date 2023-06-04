@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace TestProject1.Forms
 {
+
+    /// <summary>
+    /// Базовый класс для всех форм
+    /// </summary>
     class BaseForm
     {
     }
